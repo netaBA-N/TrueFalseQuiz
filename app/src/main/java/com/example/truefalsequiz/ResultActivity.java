@@ -3,6 +3,7 @@ package com.example.truefalsequiz;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -26,13 +27,16 @@ public class ResultActivity extends AppCompatActivity {
 
         });
         TextView tvResult = findViewById(R.id.tvResult);
+        LinearLayout main = findViewById(R.id.main);
 
         boolean isCorrect = getIntent().getBooleanExtra("isCorrect", false);
 
         if (isCorrect) {
             tvResult.setText("צדקת!");
+            main.setBackgroundColor(getColor(R.color.screen_bgTr));
         } else {
             tvResult.setText("טעית...");
+            main.setBackgroundColor(getColor(R.color.screen_bgFa));
         }
 
         Button btnBack = findViewById(R.id.btnBack);

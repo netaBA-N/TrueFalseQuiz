@@ -2,5 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="screen_bgTr">#36C536</color>
+    <color name="screen_bgFa">#BF2727</color>
+
     <color name="screen_bg">#6FAFAA</color>
 </resources>
