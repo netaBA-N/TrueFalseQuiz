@@ -60,8 +60,10 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                 intent.putExtra("isCorrect", isCorrect);
+                intent.putExtra("Q","1");
                 startActivity(intent);
             }
+
         });
     }
 }
